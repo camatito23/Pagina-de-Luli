@@ -1,0 +1,1201 @@
+/*
+  TEMPLATE STYLES: These styles are used as a base template.
+  AI is allowed to modify these styles as needed.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "DM Sans", sans-serif;
+  overflow-x: clip;
+}
+
+/* —— Hero Luli15 —— */
+.luli-hero {
+  --hero-rose: #c97f72;
+  --hero-deep: #8e514b;
+  --hero-blush: #f6ddd5;
+  --hero-cream: #fff8f2;
+  --hero-gold: #b4874d;
+  --hero-rose-soft: #e8b4b8;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: min(100dvh, 820px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(3.5rem, 8vw, 6.5rem) 1.25rem;
+  text-align: center;
+  color: var(--hero-deep);
+  background:
+    radial-gradient(ellipse 70% 55% at 8% 12%, rgba(255, 255, 255, 0.92) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 50% at 92% 88%, rgba(232, 180, 184, 0.45) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 40% at 50% 50%, rgba(255, 248, 242, 0.9) 0%, transparent 70%),
+    linear-gradient(160deg, #fdf6f3 0%, var(--hero-cream) 42%, #f5e0d8 100%);
+}
+
+.luli-hero__glow {
+  position: absolute;
+  z-index: 0;
+  width: clamp(14rem, 36vw, 28rem);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(2px);
+}
+
+.luli-hero__glow--tl {
+  top: -8%;
+  left: -6%;
+  background: radial-gradient(circle, rgba(232, 180, 184, 0.55) 0%, transparent 68%);
+}
+
+.luli-hero__glow--br {
+  right: -8%;
+  bottom: -10%;
+  background: radial-gradient(circle, rgba(197, 160, 89, 0.28) 0%, transparent 68%);
+}
+
+.luli-hero__sparkle {
+  position: absolute;
+  z-index: 0;
+  width: 0.55rem;
+  height: 0.55rem;
+  pointer-events: none;
+  background: var(--hero-gold);
+  opacity: 0.55;
+  transform: rotate(45deg);
+  box-shadow: 0 0 12px rgba(180, 135, 77, 0.35);
+}
+
+.luli-hero__sparkle--1 {
+  top: 18%;
+  left: 12%;
+  width: 0.4rem;
+  height: 0.4rem;
+  opacity: 0.4;
+}
+
+.luli-hero__sparkle--2 {
+  top: 28%;
+  right: 14%;
+  width: 0.7rem;
+  height: 0.7rem;
+  opacity: 0.5;
+  background: var(--hero-rose-soft);
+}
+
+.luli-hero__sparkle--3 {
+  bottom: 22%;
+  left: 18%;
+  width: 0.45rem;
+  height: 0.45rem;
+}
+
+.luli-hero__sparkle--4 {
+  bottom: 30%;
+  right: 16%;
+  width: 0.35rem;
+  height: 0.35rem;
+  opacity: 0.35;
+  background: var(--hero-rose);
+}
+
+.luli-hero__inner {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 42rem);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.luli-hero__kicker {
+  margin: 0;
+  color: var(--hero-deep);
+  font-family: var(--font-secondary, "Archivo", "DM Sans", sans-serif);
+  font-size: clamp(0.72rem, 1.35vw, 0.88rem);
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.luli-hero__rule {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  width: min(100%, 16rem);
+  margin: 1rem auto 0.35rem;
+  color: var(--hero-gold);
+}
+
+.luli-hero__rule--soft {
+  margin: 1.15rem auto 1.35rem;
+  width: min(100%, 12rem);
+  opacity: 0.9;
+}
+
+.luli-hero__rule-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, currentColor 20%, currentColor 80%, transparent);
+  opacity: 0.7;
+}
+
+.luli-hero__rule-diamond {
+  width: 0.4rem;
+  height: 0.4rem;
+  flex-shrink: 0;
+  transform: rotate(45deg);
+  background: currentColor;
+}
+
+.luli-hero__heart {
+  width: 0.55rem;
+  height: 0.55rem;
+  flex-shrink: 0;
+  position: relative;
+  transform: rotate(-45deg);
+  background: var(--hero-rose);
+  opacity: 0.85;
+}
+
+.luli-hero__heart::before,
+.luli-hero__heart::after {
+  content: "";
+  position: absolute;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.luli-hero__heart::before {
+  top: -0.28rem;
+  left: 0;
+}
+
+.luli-hero__heart::after {
+  top: 0;
+  left: 0.28rem;
+}
+
+.luli-hero__logo-wrap {
+  width: min(100%, 34rem);
+  margin: 0.35rem auto 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.luli-hero__logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: clamp(7.5rem, 22vw, 11.5rem);
+  object-fit: contain;
+  filter: drop-shadow(0 8px 24px rgba(142, 81, 75, 0.12));
+}
+
+.luli-hero__title {
+  margin: 0.15rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.45rem 0.65rem;
+  color: var(--hero-deep);
+  font-family: var(--font-primary, "Gloock", Georgia, serif);
+  font-size: clamp(1.85rem, 4.6vw, 2.85rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.luli-hero__title-main {
+  background: linear-gradient(135deg, #c48a92 0%, #d4a0a8 45%, #b4874d 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 400;
+}
+
+.luli-hero__title-sep {
+  color: var(--hero-gold);
+  opacity: 0.75;
+  font-size: 0.85em;
+}
+
+.luli-hero__title-sub {
+  color: var(--hero-deep);
+  font-weight: 400;
+}
+
+.luli-hero__lead {
+  margin: 0;
+  max-width: 34rem;
+  color: #9a6a64;
+  font-family: var(--font-secondary, "Archivo", "DM Sans", sans-serif);
+  font-size: clamp(0.95rem, 1.65vw, 1.08rem);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.75;
+}
+
+.luli-hero__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  min-height: 3rem;
+  padding: 0.9rem 1.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(180, 135, 77, 0.35);
+  background: linear-gradient(135deg, #e8b4b8 0%, #d4a0a8 48%, #c97f72 100%);
+  color: #3c2a2d;
+  font-family: var(--font-secondary, "Archivo", "DM Sans", sans-serif);
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  box-shadow:
+    0 0.65rem 1.6rem rgba(142, 81, 75, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
+  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+
+.luli-hero__cta:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.03);
+  box-shadow:
+    0 0.9rem 1.9rem rgba(142, 81, 75, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.luli-hero__cta:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 560px) {
+  .luli-hero {
+    min-height: auto;
+    padding-top: 3.25rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .luli-hero__kicker {
+    letter-spacing: 0.2em;
+  }
+
+  .luli-hero__title {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .luli-hero__title-sep {
+    display: none;
+  }
+
+  .luli-hero__lead {
+    padding-inline: 0.15rem;
+    line-height: 1.7;
+  }
+
+  .luli-hero__cta {
+    width: min(100%, 18.5rem);
+    padding-inline: 1.25rem;
+  }
+
+  .luli-hero__sparkle--1,
+  .luli-hero__sparkle--3 {
+    left: 6%;
+  }
+
+  .luli-hero__sparkle--2,
+  .luli-hero__sparkle--4 {
+    right: 6%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .luli-hero__cta {
+    transition: none;
+  }
+}
+
+/* —— Flores decorativas —— */
+.luli-flower {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  filter: drop-shadow(0 6px 16px rgba(142, 81, 75, 0.12));
+  opacity: 0.92;
+}
+
+.luli-flower--tl {
+  top: 4%;
+  left: 5%;
+  transform: rotate(-18deg);
+}
+
+.luli-flower--tr {
+  top: 8%;
+  right: 6%;
+  transform: rotate(22deg);
+}
+
+.luli-flower--bl {
+  bottom: 7%;
+  left: 7%;
+  transform: rotate(28deg);
+}
+
+.luli-flower--br {
+  bottom: 5%;
+  right: 5%;
+  transform: rotate(-24deg);
+}
+
+@media (max-width: 560px) {
+  .luli-flower--tl {
+    top: 2%;
+    left: 2%;
+  }
+  .luli-flower--tr {
+    top: 3%;
+    right: 2%;
+  }
+  .luli-flower--bl {
+    bottom: 2%;
+    left: 2%;
+  }
+  .luli-flower--br {
+    bottom: 2%;
+    right: 2%;
+  }
+}
+
+/* —— Nombre y subtítulo fusionados —— */
+.luli-hero__name {
+  margin: 0.2rem 0 0;
+  color: #c98b7e;
+  font-family: "Great Vibes", "Allura", "Segoe Script", "Brush Script MT", cursive;
+  font-size: clamp(4.5rem, 13vw, 7.5rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 0.9;
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.35);
+}
+
+.luli-hero__subtitle {
+  margin: 0.1rem 0 0;
+  color: var(--hero-deep, #8e514b);
+  font-family: var(--font-primary, "Gloock", Georgia, serif);
+  font-size: clamp(1.1rem, 2.6vw, 1.6rem);
+  font-weight: 400;
+  letter-spacing: 0.32em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+/* —— Cápsula de fecha y tagline —— */
+.luli-hero__date-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.6rem auto 0;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #8f9a6e 0%, #7a8660 100%);
+  color: #f7f4ea;
+  font-family: var(--font-secondary, "Archivo", "DM Sans", sans-serif);
+  font-size: clamp(0.7rem, 1.3vw, 0.82rem);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  line-height: 1.3;
+  text-transform: uppercase;
+  box-shadow: 0 0.4rem 1rem rgba(90, 100, 60, 0.2);
+}
+
+.luli-hero__tagline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  margin: 0.9rem 0 1.6rem;
+  color: #c98b7e;
+  font-family: "Great Vibes", "Allura", "Segoe Script", "Brush Script MT", cursive;
+  font-size: clamp(1.3rem, 3vw, 1.7rem);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+}
+
+.luli-hero__tagline-heart {
+  display: inline-block;
+  width: 0.55rem;
+  height: 0.55rem;
+  position: relative;
+  flex-shrink: 0;
+  transform: rotate(-45deg);
+  background: #d4a09a;
+  opacity: 0.95;
+  margin-bottom: 0.15rem;
+}
+
+.luli-hero__tagline-heart::before,
+.luli-hero__tagline-heart::after {
+  content: "";
+  position: absolute;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.luli-hero__tagline-heart::before {
+  top: -0.28rem;
+  left: 0;
+}
+
+.luli-hero__tagline-heart::after {
+  top: 0;
+  left: 0.28rem;
+}
+
+/* —— Cuenta regresiva fusionada —— */
+.luli-hero__countdown {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(0.6rem, 2vw, 1.1rem);
+  width: min(100%, 34rem);
+  margin: 0 auto;
+}
+
+.luli-hero__countdown-card {
+  display: flex;
+  min-height: clamp(5.5rem, 11vw, 7rem);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 0.4rem 0.75rem;
+  border: 1px solid rgba(180, 135, 77, 0.28);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 0.6rem 1.5rem rgba(142, 81, 75, 0.1), inset 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.luli-hero__countdown-card:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.9rem 1.8rem rgba(142, 81, 75, 0.15), inset 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
+.luli-hero__countdown-number {
+  color: #5f3f3c;
+  font-family: var(--font-secondary, "DM Sans", sans-serif);
+  font-size: clamp(1.7rem, 4.4vw, 2.8rem);
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  line-height: 1;
+}
+
+.luli-hero__countdown-label {
+  margin-top: 0.55rem;
+  color: var(--hero-rose, #c97f72);
+  font-family: var(--font-secondary, "DM Sans", sans-serif);
+  font-size: clamp(0.6rem, 1.1vw, 0.74rem);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1;
+}
+
+@media (max-width: 560px) {
+  .luli-hero__countdown {
+    gap: 0.5rem;
+  }
+  .luli-hero__countdown-card {
+    min-height: 5.25rem;
+    padding: 0.6rem 0.25rem 0.55rem;
+    border-radius: 0.8rem;
+  }
+  .luli-hero__countdown-label {
+    letter-spacing: 0.1em;
+  }
+  .luli-hero__subtitle {
+    letter-spacing: 0.22em;
+  }
+}
+
+/* —— Sección Detalles Luli15 —— */
+.luli-details {
+  --hero-rose: #c97f72;
+  --hero-deep: #8e514b;
+  --hero-blush: #f6ddd5;
+  --hero-cream: #fff8f2;
+  --hero-gold: #b4874d;
+  --hero-rose-soft: #e8b4b8;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(4rem, 8vw, 6.5rem) 1.25rem;
+  text-align: center;
+  color: var(--hero-deep);
+  background:
+    radial-gradient(ellipse 70% 55% at 8% 12%, rgba(255, 255, 255, 0.92) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 50% at 92% 88%, rgba(232, 180, 184, 0.45) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 40% at 50% 50%, rgba(255, 248, 242, 0.9) 0%, transparent 70%),
+    linear-gradient(160deg, #fdf6f3 0%, var(--hero-cream) 42%, #f5e0d8 100%);
+}
+
+.luli-details__glow {
+  position: absolute;
+  z-index: 0;
+  width: clamp(14rem, 36vw, 28rem);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(2px);
+}
+
+.luli-details__glow--tl {
+  top: -8%;
+  left: -6%;
+  background: radial-gradient(circle, rgba(232, 180, 184, 0.55) 0%, transparent 68%);
+}
+
+.luli-details__glow--br {
+  right: -8%;
+  bottom: -10%;
+  background: radial-gradient(circle, rgba(197, 160, 89, 0.28) 0%, transparent 68%);
+}
+
+.luli-details__inner {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 72rem);
+  margin: 0 auto;
+}
+
+.luli-details__rule {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  width: min(100%, 16rem);
+  margin: 0 auto 1.25rem;
+  color: var(--hero-gold);
+}
+
+.luli-details__rule-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, currentColor 20%, currentColor 80%, transparent);
+  opacity: 0.7;
+}
+
+.luli-details__rule-diamond {
+  width: 0.4rem;
+  height: 0.4rem;
+  flex-shrink: 0;
+  transform: rotate(45deg);
+  background: currentColor;
+}
+
+.luli-details__title {
+  margin: 0;
+  color: var(--hero-deep);
+  font-family: var(--font-primary, "Gloock", Georgia, serif);
+  font-size: clamp(1.85rem, 4.6vw, 2.85rem);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.luli-details__lead {
+  margin: 0.85rem auto 0;
+  max-width: 40rem;
+  color: #9a6a64;
+  font-family: var(--font-secondary, "Archivo", "DM Sans", sans-serif);
+  font-size: clamp(0.95rem, 1.65vw, 1.08rem);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.75;
+}
+
+.luli-details__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2.4vw, 1.6rem);
+  margin: 2.5rem auto 0;
+}
+
+.luli-details__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: clamp(1.5rem, 3vw, 2.25rem) 1.4rem 1.85rem;
+  border: 1px solid rgba(180, 135, 77, 0.28);
+  border-radius: 1.1rem;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 0.7rem 1.7rem rgba(142, 81, 75, 0.1), inset 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.luli-details__card:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 1rem 2rem rgba(142, 81, 75, 0.15), inset 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
+.luli-details__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  margin-bottom: 1rem;
+  border-radius: 0.9rem;
+  background: linear-gradient(135deg, #f0c9c2 0%, #e8b4b8 100%);
+  color: #5f3f3c;
+  box-shadow: 0 0.4rem 0.9rem rgba(142, 81, 75, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.luli-details__card-title {
+  margin: 0 0 0.6rem;
+  color: var(--hero-deep);
+  font-family: var(--font-primary, "Gloock", Georgia, serif);
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+}
+
+.luli-details__card-text {
+  margin: 0;
+  color: #9a6a64;
+  font-family: var(--font-secondary, "Archivo", "DM Sans", sans-serif);
+  font-size: clamp(0.9rem, 1.4vw, 1rem);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.7;
+}
+
+.luli-details__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2.5rem auto 0;
+  min-height: 3rem;
+  padding: 0.9rem 1.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(180, 135, 77, 0.35);
+  background: linear-gradient(135deg, #e8b4b8 0%, #d4a0a8 48%, #c97f72 100%);
+  color: #3c2a2d;
+  font-family: var(--font-secondary, "Archivo", "DM Sans", sans-serif);
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  box-shadow: 0 0.65rem 1.6rem rgba(142, 81, 75, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+
+.luli-details__cta:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.03);
+  box-shadow: 0 0.9rem 1.9rem rgba(142, 81, 75, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.luli-details__cta:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 860px) {
+  .luli-details__grid {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+    max-width: 30rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .luli-details {
+    padding-top: 3.25rem;
+    padding-bottom: 3.75rem;
+  }
+  .luli-details__cta {
+    width: min(100%, 18.5rem);
+    padding-inline: 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .luli-details__card,
+  .luli-details__cta {
+    transition: none;
+  }
+}
+
+.countdown-section {
+  --countdown-rose: #c97f72;
+  --countdown-deep-rose: #8e514b;
+  --countdown-cream: #fff8f2;
+  --countdown-blush: #f6ddd5;
+  --countdown-gold: #b4874d;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(4.5rem, 9vw, 7.5rem) 1.25rem;
+  text-align: center;
+  color: var(--countdown-deep-rose);
+  background:
+    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.86) 0 10%, transparent 27%),
+    radial-gradient(circle at 88% 84%, rgba(236, 184, 168, 0.34) 0 9%, transparent 28%),
+    linear-gradient(135deg, #f8e8e1 0%, var(--countdown-cream) 49%, #f5dfd6 100%);
+}
+
+.countdown-content {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 780px);
+  margin: 0 auto;
+}
+
+.countdown-brand {
+  position: relative;
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.countdown-crown {
+  position: absolute;
+  top: -0.15rem;
+  left: 0.15rem;
+  width: clamp(1.35rem, 3.2vw, 1.85rem);
+  color: #c9a06a;
+  opacity: 0.9;
+  transform: rotate(-12deg);
+}
+
+.countdown-crown svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.countdown-name {
+  margin: 0;
+  padding: 0.35rem 0.5rem 0;
+  color: #c98b7e;
+  font-family: "Great Vibes", "Allura", "Segoe Script", "Brush Script MT", cursive;
+  font-size: clamp(4.25rem, 12vw, 6.75rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 0.9;
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.35);
+}
+
+.countdown-name-heart {
+  position: absolute;
+  top: 18%;
+  right: -0.15rem;
+  width: 0.72rem;
+  height: 0.72rem;
+  transform: rotate(-45deg);
+  background: #d4a09a;
+  opacity: 0.9;
+}
+
+.countdown-name-heart::before,
+.countdown-name-heart::after {
+  content: "";
+  position: absolute;
+  width: 0.72rem;
+  height: 0.72rem;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.countdown-name-heart::before {
+  top: -0.36rem;
+  left: 0;
+}
+
+.countdown-name-heart::after {
+  top: 0;
+  left: 0.36rem;
+}
+
+.countdown-fiesta-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  margin: 0.35rem auto 0.55rem;
+  width: min(100%, 16rem);
+}
+
+.countdown-fiesta-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c9a06a 15%, #c9a06a 85%, transparent);
+  opacity: 0.75;
+}
+
+.countdown-fiesta {
+  margin: 0;
+  color: #b4874d;
+  font-family: var(--font-secondary, "Archivo", "DM Sans", sans-serif);
+  font-size: clamp(0.78rem, 1.5vw, 0.95rem);
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.countdown-heart-sm {
+  display: block;
+  width: 0.48rem;
+  height: 0.48rem;
+  margin: 0.15rem auto 0.85rem;
+  position: relative;
+  transform: rotate(-45deg);
+  background: #c97f72;
+  opacity: 0.85;
+}
+
+.countdown-heart-sm::before,
+.countdown-heart-sm::after {
+  content: "";
+  position: absolute;
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.countdown-heart-sm::before {
+  top: -0.24rem;
+  left: 0;
+}
+
+.countdown-heart-sm::after {
+  top: 0;
+  left: 0.24rem;
+}
+
+.countdown-date-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0.45rem 1.35rem;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #8f9a6e 0%, #7a8660 100%);
+  color: #f7f4ea;
+  font-family: var(--font-secondary, "Archivo", "DM Sans", sans-serif);
+  font-size: clamp(0.68rem, 1.25vw, 0.8rem);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1.3;
+  text-transform: uppercase;
+  box-shadow: 0 0.35rem 0.9rem rgba(90, 100, 60, 0.18);
+}
+
+.countdown-tagline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  margin: 1rem 0 1.85rem;
+  color: #c98b7e;
+  font-family: "Great Vibes", "Allura", "Segoe Script", "Brush Script MT", cursive;
+  font-size: clamp(1.35rem, 3.2vw, 1.75rem);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+}
+
+.countdown-tagline-heart {
+  display: inline-block;
+  width: 0.55rem;
+  height: 0.55rem;
+  position: relative;
+  flex-shrink: 0;
+  transform: rotate(-45deg);
+  background: #d4a09a;
+  opacity: 0.95;
+  margin-bottom: 0.15rem;
+}
+
+.countdown-tagline-heart::before,
+.countdown-tagline-heart::after {
+  content: "";
+  position: absolute;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.countdown-tagline-heart::before {
+  top: -0.28rem;
+  left: 0;
+}
+
+.countdown-tagline-heart::after {
+  top: 0;
+  left: 0.28rem;
+}
+
+.countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(0.65rem, 2.2vw, 1.25rem);
+  margin: 0 auto;
+}
+
+.countdown-card {
+  display: flex;
+  min-height: clamp(6.5rem, 13vw, 8.2rem);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0.5rem 0.85rem;
+  border: 1px solid rgba(180, 135, 77, 0.28);
+  border-radius: 1.1rem;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0.7rem 1.7rem rgba(142, 81, 75, 0.1), inset 0 0 0 0.25rem rgba(255, 255, 255, 0.56);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.countdown-card:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 1rem 2rem rgba(142, 81, 75, 0.15), inset 0 0 0 0.25rem rgba(255, 255, 255, 0.56);
+}
+
+.countdown-number {
+  color: #5f3f3c;
+  font-family: var(--font-secondary, "DM Sans", sans-serif);
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  line-height: 1;
+}
+
+.countdown-label {
+  margin-top: 0.65rem;
+  color: var(--countdown-rose);
+  font-family: var(--font-secondary, "DM Sans", sans-serif);
+  font-size: clamp(0.62rem, 1.15vw, 0.76rem);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  line-height: 1;
+}
+
+.countdown-ornament {
+  position: absolute;
+  z-index: 0;
+  width: clamp(8rem, 18vw, 14rem);
+  aspect-ratio: 1;
+  border: 1px solid rgba(201, 127, 114, 0.17);
+  border-radius: 50%;
+}
+
+.countdown-ornament::before,
+.countdown-ornament::after {
+  position: absolute;
+  width: 0.38rem;
+  height: 0.38rem;
+  border-radius: 50%;
+  content: "";
+  background: var(--countdown-gold);
+  opacity: 0.65;
+}
+
+.countdown-ornament::before {
+  top: 18%;
+  left: 20%;
+}
+
+.countdown-ornament::after {
+  right: 16%;
+  bottom: 20%;
+}
+
+.countdown-ornament-left {
+  top: -4rem;
+  left: -5rem;
+}
+
+.countdown-ornament-right {
+  right: -5rem;
+  bottom: -4rem;
+}
+
+@media (max-width: 560px) {
+  .countdown-section {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .countdown-date {
+    margin-bottom: 1.7rem;
+  }
+
+  .countdown-grid {
+    gap: 0.55rem;
+  }
+
+  .countdown-card {
+    min-height: 6.25rem;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+    border-radius: 0.8rem;
+  }
+
+  .countdown-label {
+    letter-spacing: 0.1em;
+  }
+}
+
+/*
+  ---break---
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+/*
+  ---break---
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}

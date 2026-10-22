@@ -1,0 +1,12 @@
+[
+	{
+		"path": "/",
+		"componentName": "HomePage_system_home",
+		"importPath": "@/pages/builder/home/HomePage",
+		"exportName": "HomePage",
+		"locale": "system",
+		"pageId": "home",
+		"isHome": true,
+		"pageType": "default"
+	}
+]
