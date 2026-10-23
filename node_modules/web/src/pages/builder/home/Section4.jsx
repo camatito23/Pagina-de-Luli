@@ -16,7 +16,7 @@ export default function Section4() {
                     <img 
                         src={foto1} 
                         alt="Sesión Luli" 
-                        className="w-full h-[60vh] md:h-[90vh] object-cover block opacity-95"
+                        className="w-full h-auto min-h-[450px] sm:min-h-[650px] object-cover block opacity-95"
                         style={fadeMaskStyle}
                     />
                 </div>
@@ -36,7 +36,7 @@ export default function Section4() {
                     <h3 className="text-xl font-serif !text-[#8e514b] mb-1 font-medium">Regalos</h3>                     
                     
                     <p className="text-[#7a5048] text-base font-serif italic mb-4 max-w-xs leading-relaxed">
-                        Agradecemos profundamente su presencia como el mejor regalo. Para quienes deseen contribuir, una urna estará disponible en el salón, o mediante transferencia.
+                        El mejor regalo para mi es tu presencia.  Pero si queres hacerme un obsequio, habrá una urna en el salón o podes transferirme al siguiente alias:
                     </p>
 
                     <div className="w-full border-t border-b border-[#8e514b]/20 py-5 mb-8">

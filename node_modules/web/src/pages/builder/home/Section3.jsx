@@ -37,11 +37,11 @@ export default function Section3() {
         <section id="detalles" className="relative pt-1 pb-12 px-4 flex flex-col items-center w-full">
             <div className="relative z-10 w-full flex flex-col items-center text-center">
                 
-                <h2 className="text-5xl !text-[#8e514b] mb-2" style={{ fontFamily: "'Great Vibes', cursive" }}>
+                <h2 className="text-5xl !text-[#8e514b] mb-8" style={{ fontFamily: "'Great Vibes', cursive" }}>
                     Detalles de la noche
                 </h2>
                 
-                <p className="text-[#7a5048] max-w-xs mb-8 text-base font-serif italic leading-relaxed">
+                <p className="text-[#7a5048] max-w-xs mb-10 text-base font-serif italic leading-relaxed">
                     Para que no te pierdas ningún detalle de esta noche inolvidable.
                 </p>
 
@@ -75,7 +75,7 @@ export default function Section3() {
                             {/* Botón de Ubicación actualizado con el mismo color exacto (#d4a393) */}
                             {d.id === 'ubicacion' && (
                                 <a 
-                                    href="https://maps.app.goo.gl/tUvCqy2XJc1h1G9E6" 
+                                    href="https://maps.app.goo.gl/P6ivHJvXdnDjxGGN8" 
                                     target="_blank" 
                                     rel="nofollow noreferrer" 
                                     className="mt-4 inline-block px-8 py-3 rounded-full bg-[#d4a393] text-[#fdf6f3] font-serif text-sm tracking-widest shadow-md hover:bg-[#c39282] transition-colors border border-[#d4a393]/40"

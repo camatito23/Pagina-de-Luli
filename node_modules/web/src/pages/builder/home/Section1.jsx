@@ -33,14 +33,14 @@ export default function Section1() {
     }, []);
 
     return (
-        <section id="hero" className="relative flex flex-col items-center justify-start pb-12 w-full">
+        <section id="hero" className="relative flex flex-col items-center justify-start pb-10 w-full">
             <div className="relative w-full flex flex-col items-center text-center">
                 
                 <div className="w-full">
                     <img 
                         src={fotoPortada} 
                         alt="Luli Portada" 
-                        className="w-full h-[60vh] md:h-[70vh] object-cover block opacity-95"
+                        className="w-full h-auto min-h-[450px] sm:min-h-[650px] object-cover block opacity-95"
                         style={{
                             WebkitMaskImage: 'linear-gradient(to bottom, black 65%, transparent 100%)',
                             maskImage: 'linear-gradient(to bottom, black 65%, transparent 100%)'
@@ -51,16 +51,16 @@ export default function Section1() {
                 {/* CAMBIO AQUÍ: Usamos -mt-32 para que todo suba más sobre la foto y quede compacto */}
                 <div className="w-full px-4 flex flex-col items-center -mt-14 relative z-10">
                     
-                    <p className="text-xl md:text-3xl -mt-0 font-serif tracking-widest text-[#7a5048] mb-2">2027</p>
-                    <p className="text-sm md:text-base font-sans tracking-[0.2em] text-[#8e514b] mb-3 uppercase font-medium">
+                    <p className="text-xl md:text-3xl -mt-0 font-serif tracking-widest text-[#7a5048] mb-6">2027</p>
+                    <p className="text-sm md:text-base font-sans tracking-[0.2em] text-[#8e514b] mb-6 uppercase font-medium">
                         Viernes 8 de Enero
                     </p>
 
-                    <p className="text-3xl md:text-4xl font-serif text-[#8e514b] mb-4">
+                    <p className="text-3xl md:text-4xl font-serif text-[#8e514b] mb-8">
                         Mis 15 Años
                     </p>
 
-                    <p className="text-lg font-serif text-[#8e514b] mb-6 italic">Faltan...</p>
+                    <p className="text-lg font-serif text-[#8e514b] mb-8 italic">Faltan...</p>
                     
                     <div className="flex flex-wrap justify-center mb-8 w-full max-w-sm mx-auto">
                         <CountdownCard value={timeLeft.days} label="DÍAS" />

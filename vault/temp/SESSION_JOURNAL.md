@@ -1333,3 +1333,164 @@
 - url: http://localhost:3000/
 - via: replaceState
 
+## 2026-10-22 21:53:29.825Z load
+- url: http://localhost:3000/
+
+## 2026-10-22 22:02:24.446Z load
+- url: http://localhost:3000/
+
+## 2026-10-22 22:03:27.732Z click
+- element: {"tag":"img","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-10-22 23:40:38.415Z click
+- element: {"tag":"img","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-10-22 23:43:18.917Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Confirmar por WhatsApp"}
+
+## 2026-10-23 00:00:59.780Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 00:01:06.348Z navigate
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+- via: replaceState
+
+## 2026-10-23 00:04:55.336Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 00:12:15.654Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 00:12:47.117Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 00:12:50.208Z click
+- element: {"tag":"p","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Mis 15 Años"}
+
+## 2026-10-23 00:13:46.628Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 00:19:23.215Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 00:21:18.388Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 00:22:44.256Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 00:26:18.167Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 00:26:34.337Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Ver mapa de ubicación"}
+
+## 2026-10-23 00:26:40.817Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Ver mapa de ubicación"}
+
+## 2026-10-23 00:26:44.485Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Ver mapa de ubicación"}
+
+## 2026-10-23 00:27:45.639Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Ver mapa de ubicación"}
+
+## 2026-10-23 00:27:56.134Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 00:27:58.748Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Ver mapa de ubicación"}
+
+## 2026-10-23 00:29:31.323Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 00:39:20.236Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 00:40:05.994Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Confirmar por WhatsApp"}
+
+## 2026-10-23 00:47:36.145Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Confirmar por WhatsApp"}
+
+## 2026-10-23 00:47:46.917Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 00:48:14.828Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Confirmar por WhatsApp"}
+
+## 2026-10-23 00:48:47.999Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 00:48:53.798Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Realizar transferencia"}
+
+## 2026-10-23 00:49:08.163Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Confirmar por WhatsApp"}
+
+## 2026-10-23 00:52:00.092Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 00:52:05.027Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Confirmar por WhatsApp"}
+
+## 2026-10-23 00:55:08.088Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 00:55:13.462Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Confirmar por WhatsApp"}
+
+## 2026-10-23 01:00:48.637Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 01:00:54.910Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Confirmar por WhatsApp"}
+
+## 2026-10-23 01:01:10.042Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Confirmar por WhatsApp"}
+
+## 2026-10-23 01:01:27.039Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Realizar transferencia"}
+
+## 2026-10-23 01:04:58.409Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 01:06:11.299Z click
+- element: {"tag":"section","role":null,"ariaLabel":null,"name":null,"type":null,"id":"detalles","placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Detalles de la nochePara que no te pierdas ningún detalle de esta noche inolvidable.Fecha y horarioViernes 8 de enero de 2027. La fiesta será de 21:00 a 05:00 hs.UbicaciónSalón de Eventos Jano's, Campana. Te esperamos para celebrar.Ver mapa de ubicaciónCódigo de vestimentaElegante formal. Vestido largo o traje. (No se permite color verde ni rosa)."}
+
+## 2026-10-23 01:08:29.409Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Confirmar por WhatsApp"}
+
+## 2026-10-23 01:10:02.021Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 01:10:07.348Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Confirmar por WhatsApp"}
+
+## 2026-10-23 01:12:02.625Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 01:12:29.595Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 01:14:03.934Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 01:14:05.524Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 01:14:05.897Z navigate
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+- via: replaceState
+
+## 2026-10-23 01:14:19.224Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Ver mapa de ubicación"}
+
+## 2026-10-23 01:14:34.311Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Confirmar por WhatsApp"}
+
+## 2026-10-23 01:33:51.905Z load
+- url: https://r5k92jck-3000.brs.devtunnels.ms/
+
+## 2026-10-23 01:34:21.148Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Confirmar por WhatsApp"}
+

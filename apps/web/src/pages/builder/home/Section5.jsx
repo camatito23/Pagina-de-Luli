@@ -1,38 +1,40 @@
 import React from 'react';
-// Asegúrate de que el nombre y ruta de esta imagen sean exactos en tu carpeta assets
-import fotoMedia from '../../../assets/Fotos2.jpeg'; // <--- CAMBIA ESTO por el nombre de tu nueva imagen intermedia
 import fotoFinal from '../../../assets/Foto final.jpeg';
 
 export default function Section5() {
-    const numeroWhatsApp = "5491100000000";
-    const mensaje = "¡Hola! Quiero confirmar mi asistencia a los XV de Luli. Mi nombre es: ";
+    const numeroWhatsApp = "5493487214253";
+    
+    // Mensaje corto, directo y que arranca de una con el saludo a Luli
+    const mensaje = "¡Hola Luli!👋🏼 Te confirmo que voy a tus 15. Mi nombre es: [Tu Nombre] y sobre la comida mis restricciones son:";
+    
     const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
 
-    // Difuminados limpios y suaves
-    const fadeMiddleMask = {
-        WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%)',
-        maskImage: 'linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%)'
-    };
-
+    // Máscara superior muy suave para fundir la foto del teatro con elegancia
     const fadeTopMask = {
-        WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 20%, black 100%)',
-        maskImage: 'linear-gradient(to bottom, transparent 0%, black 20%, black 100%)'
+        WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 15%, black 100%)',
+        maskImage: 'linear-gradient(to bottom, transparent 0%, black 15%, black 100%)'
     };
 
     return (
-        <section id="rsvp" className="relative flex flex-col items-center justify-center w-full pt-4">
+        <section id="rsvp" className="relative flex flex-col items-center justify-center w-full pt-10">
             
-
-
-            {/* Textos de confirmación */}
-            <div className="relative z-10 w-full max-w-sm mx-auto flex flex-col items-center text-center px-6 mb-6">
+            {/* Bloque de confirmación con mayor espacio y respiro abajo */}
+            <div className="relative z-10 w-full max-w-sm mx-auto flex flex-col items-center text-center px-8 mb-12">
                 
-                <h3 className="text-3xl font-serif mb-3 font-medium" style={{ color: '#8e514b' }}>
+                {/* Ícono de confirmación elegante */}
+                <div className="mb-6 text-[#8e514b] opacity-90">
+                    <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                </div>
+
+                <h3 className="text-3xl font-serif mb-4 font-medium" style={{ color: '#8e514b' }}>
                     ¡Confirma tu asistencia!
                 </h3>
                 
                 <p className="text-[#7a5048] text-base font-serif italic mb-6 leading-relaxed">
-                    Para el XV de Luli, el viernes 8 de enero de 2027. ¡Esperamos contar con vos!
+                    Para mis XV, el viernes 8 de enero de 2027. ¡Espero contar con tu presencia!
                 </p>
 
                 {/* Botón de WhatsApp unificado */}
@@ -53,12 +55,12 @@ export default function Section5() {
                 </p>
             </div>
 
-            {/* FOTO FINAL DEL TEATRO (Ajustada para llenar bien la pantalla sin bordes marrones extraños) */}
-            <div className="w-full -mt-4 overflow-hidden">
+            {/* FOTO FINAL DEL TEATRO (Con espacio superior de respiro) */}
+            <div className="w-full overflow-hidden mt-4">
                 <img 
                     src={fotoFinal} 
                     alt="Luli Teatro" 
-                    className="w-full h-[55vh] md:h-[80vh] object-cover block opacity-95 scale-15"
+                    className="w-full h-auto min-h-[615px] sm:min-h-[700px] object-cover block opacity-95"
                     style={fadeTopMask}
                 />
             </div>
